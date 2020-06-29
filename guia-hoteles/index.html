@@ -1,76 +1,137 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Guia Hoteles</title>
-  </head>
-  <body>
-	
-		<div class="jumbotron">
-		  <h1>Hoteles</h1>
-		</div>
-		
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-4">
-					<p>
-						<h3>¿Que ofrecemos?</h3>
-						<p>Busca hoteles disponibles en tu lugar de visita de una forma facil.</p>
-					</p>
-				</div>
-				<div class="col-sm-4">
-					<p>
-						<h3>¿Como hago una reservación?</h3>
-						<p>Elige el hotel de la ciudad de tu visita y haz la reservación con tus datos.</p>
-					</p>
-				</div>
-				<div class="col-sm-4">
-					<p>
-						<h3>¿Que hacer despues de la reservación?</h3>
-						<p>Solo espera nuestro correo de confirmación y LISTO! tu reservación se realizó con exito.</p>
-					</p>
-				</div>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<title>Guia Hoteles</title>
+</head>
+
+<body>
+
+	<div class="jumbotron">
+		<h1>Hoteles</h1>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<p>
+				<h3>¿Que ofrecemos?</h3>
+				<p>Busca hoteles disponibles en tu lugar de visita de una forma facil.</p>
+				</p>
 			</div>
+			<div class="col-sm-4">
+				<p>
+				<h3>¿Como hago una reservación?</h3>
+				<p>Elige el hotel de la ciudad de tu visita y haz la reservación con tus datos.</p>
+				</p>
+			</div>
+			<div class="col-sm-4">
+				<p>
+				<h3>¿Que hacer despues de la reservación?</h3>
+				<p>Solo espera nuestro correo de confirmación y LISTO! tu reservación se realizó con exito.</p>
+				</p>
+			</div>
+		</div>
 		<hr>
 
-		<div class="row">
-			<div class="col-sm-3">
-				<h4>Hotel en Dublin</h4>
-				<p>Ubicación: Dublin-Irlanda</p>
-				<p>Detalles: Hotel cerca de lugares turisticos.</p>
-				<button class="btn"> Haz tu reservación</button>
+		<div class="d-flex flex-wrap flex-row-reverse">
+			<div class="card-hotel d-flex flex-column justify-content-between">
+				<div>
+					<h4>Hotel en Dublin</h4>
+					<p>Ubicación: Dublin-Irlanda</p>
+					<p>Detalles: Hotel cerca de lugares turisticos.</p>
+				</div>
+				<button class="btn btn-primary btn-reserva"> Haz tu reservación</button>
 			</div>
-			<div class="col-sm-3">
-				<h4>Hotel en Mérida</h4>
-				<p>Ubicación: Mérida,Yucatán-México</p>
-				<p>Detalles: Hotel tranquilo, cerca de la playa.</p>
-				<button class="btn">Haz tu reservación</button>
+			<div class="card-hotel  d-flex flex-column justify-content-between">
+				<div>
+					<h4>Hotel en Mérida</h4>
+					<p>Ubicación: Mérida,Yucatán-México</p>
+					<p>Detalles: Hotel tranquilo, cerca de la playa.</p>
+				</div>
+				<button class="btn btn-primary btn-reserva">Haz tu reservación</button>
 			</div>
-			<div class="col-sm-3">
-				<h4>Hotel en Seattle</h4>
-				<p>Ubicación: Seattle-EEUU</p>
-				<p>Detalles: Hotel cerca de lugares turisticos.</p>
-				<button class="btn">Haz tu reservación</button>
+			<div class="card-hotel  d-flex flex-column justify-content-between">
+				<div>
+					<h4>Hotel en Seattle</h4>
+					<p>Ubicación: Seattle-EEUU</p>
+					<p>Detalles: Hotel cerca de lugares turisticos.</p>
+				</div>
+				<button class="btn btn-primary btn-reserva">Haz tu reservación</button>
 			</div>
-			<div class="col-sm-3">
-				<h4>Hotel en Bogota</h4>
-				<p>Ubicación: Bogota-Colombia</p>
-				<p>Detalles: Hotel perfecto para estadias cortas.</p>
-				<button class="btn">Haz tu reservación</button>
+			<div class="card-hotel  d-flex flex-column justify-content-between">
+				<div>
+					<h4>Hotel en Bogota</h4>
+					<p>Ubicación: Bogota-Colombia</p>
+					<p>Detalles: Hotel perfecto para estadias cortas.</p>
+				</div>
+				<button class="btn btn-primary btn-reserva">Haz tu reservación</button>
+			</div>
+			<div class="card-hotel  d-flex flex-column justify-content-between">
+				<div>
+					<h4>Hotel en Lima</h4>
+					<p>Ubicación: Lima-Peru</p>
+					<p>Detalles: Hotel perfecto para estadias cortas.</p>
+				</div>
+				<button class="btn btn-primary btn-reserva">Haz tu reservación</button>
+			</div>
+			<div class="card-hotel  d-flex flex-column justify-content-between">
+				<div>
+					<h4>Hotel en Madrid</h4>
+					<p>Ubicación: Madrid-España</p>
+					<p>Detalles: Hotel perfecto para estadias cortas.</p>
+				</div>
+				<button class="btn btn-primary btn-reserva">Haz tu reservación</button>
+			</div>
+			<div class="card-hotel  d-flex flex-column justify-content-between">
+				<div>
+					<h4>Hotel en Berlin</h4>
+					<p>Ubicación: Berlin-Alemania</p>
+					<p>Detalles: Hotel perfecto para estadias cortas.</p>
+				</div>
+				<button class="btn btn-primary btn-reserva">Haz tu reservación</button>
 			</div>
 		</div>
-		</div>
+	</div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  </body>
+	<footer>
+		<div class="row">
+			<div class="col-sm-4 d-flex flex-column">
+				<a href="https://www.facebook.com/">Facebook</a>
+				<a href="https://www.twitter.com/">Twitter</a>
+				<a href="https://www.instagram.com/">Instagram</a>
+				<a href="https://www.youtube.com/">Youtube</a>
+			</div>
+			<div class="col-sm-4">
+				<address>
+					<h3>Información General</h3>
+					<p>Cuautitlán Izcalli, México</p>
+					<p>5563782823</p>
+					<p>jorgeperez@ciencias.unam.mx</p>
+				</address>
+			</div>
+			<div class="col-sm-4 d-flex flex-column align-items-end">
+				<a href="https://www.facebook.com/">Nosotros</a>
+				<a href="https://www.twitter.com/">Contacto</a>
+				<a href="https://www.instagram.com/">Terminos y Condiciones</a>
+				<a href="https://www.youtube.com/">Avisos</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/popper.js/dist/popper.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
 </html>
