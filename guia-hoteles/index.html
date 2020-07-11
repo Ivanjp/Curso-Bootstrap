@@ -86,6 +86,7 @@
 					<h5 class="card-title">Hotel en Dublin</h5>
 					<h6 class="card-subtitle text-muted">Irlanda</h6>
 					<p class="card-text">Detalles: Hotel cerca de lugares turisticos.</p>
+					<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
 				</div>
 				<button class="btn btn-primary btn-reserva"> Haz tu reservación</button>
 			</div>
@@ -95,6 +96,7 @@
 					<h5 class="card-title">Hotel en Mérida</h5>
 					<h6 class="card-subtitle text-muted">México</h6>
 					<p class="card-text">Detalles: Hotel tranquilo, cerca de la playa.</p>
+					<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
 				</div>
 				<button class="btn btn-primary btn-reserva">Haz tu reservación</button>
 			</div>
@@ -104,6 +106,7 @@
 					<h5 class="card-title">Hotel en Seattle</h5>
 					<h6 class="card-subtitle text-muted">EEUU</h6>
 					<p class="card-text">Detalles: Hotel cerca de lugares turisticos.</p>
+					<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
 				</div>
 				<button class="btn btn-primary btn-reserva">Haz tu reservación</button>
 			</div>
@@ -113,6 +116,7 @@
 					<h5 class="card-title">Hotel en Bogota</h5>
 					<h6 class="card-subtitle text-muted">Colombia</h6>
 					<p class="card-text">Detalles: Hotel perfecto para estadias cortas.</p>
+					<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
 				</div>
 				<button class="btn btn-primary btn-reserva">Haz tu reservación</button>
 			</div>
@@ -122,6 +126,7 @@
 					<h5 class="card-title">Hotel en Lima</h5>
 					<h6 class="card-subtitle text-muted">Perú</h6>
 					<p class="card-text">Detalles: Hotel perfecto para estadias cortas.</p>
+					<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
 				</div>
 				<button class="btn btn-primary btn-reserva">Haz tu reservación</button>
 			</div>
@@ -131,6 +136,7 @@
 					<h5 class="card-title">Hotel en Madrid</h5>
 					<h6 class="card-subtitle text-muted">España</h6>
 					<p class="card-text">Detalles: Hotel perfecto para estadias cortas.</p>
+					<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
 				</div>
 				<button class="btn btn-primary btn-reserva">Haz tu reservación</button>
 			</div>
@@ -140,11 +146,41 @@
 					<h5 class="card-title">Hotel en Berlin</h5>
 					<h6 class="card-subtitle text-muted">Alemania</h6>
 					<p class="card-text">Detalles: Hotel perfecto para estadias cortas.</p>
+					<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
 				</div>
 				<button class="btn btn-primary btn-reserva">Haz tu reservación</button>
 			</div>
 		</div>
 	</div>
+
+	<div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Contacto con el hotel</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-group">
+						<label for="recipient-name" class="col-form-label">Tu email</label>
+						<input type="text" class="form-control" id="recipient-name">
+					</div>
+					<div class="form-group">
+						<label for="message-text" class="col-form-label">Mensaje</label>
+						<textarea class="form-control" id="message-text"></textarea>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-success">Enviar</button>
+			</div>
+		</div>
+	</div>
+</div>
 
 	<footer>
 		<div class="row">
