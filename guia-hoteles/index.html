@@ -108,7 +108,7 @@
 					<h5 class="card-title" data-toggle="popover" title="Cupones" data-content="Asegurate de tener tu código antes de reservar">Hotel en Dublin</h5>
 					<h6 class="card-subtitle text-muted">Irlanda</h6>
 					<p class="card-text">Detalles: Hotel cerca de lugares turisticos.</p>
-					<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+					
 				</div>
 				<button class="btn btn-primary btn-reserva"> Haz tu reservación</button>
 			</div>
@@ -118,7 +118,7 @@
 					<h5 class="card-title" data-toggle="popover" title="Cupones" data-content="Asegurate de tener tu código antes de reservar">Hotel en Mérida</h5>
 					<h6 class="card-subtitle text-muted">México</h6>
 					<p class="card-text">Detalles: Hotel tranquilo, cerca de la playa.</p>
-					<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+			
 				</div>
 				<button class="btn btn-primary btn-reserva">Haz tu reservación</button>
 			</div>
@@ -128,7 +128,7 @@
 					<h5 class="card-title" data-toggle="popover" title="Cupones" data-content="Asegurate de tener tu código antes de reservar">Hotel en Seattle</h5>
 					<h6 class="card-subtitle text-muted">EEUU</h6>
 					<p class="card-text">Detalles: Hotel cerca de lugares turisticos.</p>
-					<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+					
 				</div>
 				<button class="btn btn-primary btn-reserva">Haz tu reservación</button>
 			</div>
@@ -138,7 +138,7 @@
 					<h5 class="card-title" data-toggle="popover" title="Cupones" data-content="Asegurate de tener tu código antes de reservar">Hotel en Bogota</h5>
 					<h6 class="card-subtitle text-muted">Colombia</h6>
 					<p class="card-text">Detalles: Hotel perfecto para estadias cortas.</p>
-					<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+					
 				</div>
 				<button class="btn btn-primary btn-reserva">Haz tu reservación</button>
 			</div>
@@ -148,7 +148,7 @@
 					<h5 class="card-title" data-toggle="popover" title="Cupones" data-content="Asegurate de tener tu código antes de reservar">Hotel en Lima</h5>
 					<h6 class="card-subtitle text-muted">Perú</h6>
 					<p class="card-text">Detalles: Hotel perfecto para estadias cortas.</p>
-					<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+					
 				</div>
 				<button class="btn btn-primary btn-reserva">Haz tu reservación</button>
 			</div>
@@ -158,7 +158,7 @@
 					<h5 class="card-title" data-toggle="popover" title="Cupones" data-content="Asegurate de tener tu código antes de reservar">Hotel en Madrid</h5>
 					<h6 class="card-subtitle text-muted">España</h6>
 					<p class="card-text">Detalles: Hotel perfecto para estadias cortas.</p>
-					<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+					
 				</div>
 				<button class="btn btn-primary btn-reserva">Haz tu reservación</button>
 			</div>
@@ -168,12 +168,14 @@
 					<h5 class="card-title" data-toggle="popover" title="Cupones" data-content="Asegurate de tener tu código antes de reservar">Hotel en Berlin</h5>
 					<h6 class="card-subtitle text-muted">Alemania</h6>
 					<p class="card-text">Detalles: Hotel perfecto para estadias cortas.</p>
-					<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+					<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
 				</div>
 				<button class="btn btn-primary btn-reserva">Haz tu reservación</button>
 			</div>
 		</div>
 	</div>
+
+	
 
 	<div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
 	aria-hidden="true">
@@ -241,6 +243,27 @@
 			$("[data-toggle='popover']").popover();
 			$('.carousel').carousel({
 				interval: 2000
+			});
+
+			$('#contacto').on('show.bs.modal',function(e){
+				console.log("El modal se está mostrando");
+
+				$('#contactoBtn').removeClass('btn-outline-success');
+				$('#contactoBtn').addClass('btn-primary');
+				$('#contactoBtn').prop('disabled',true);
+			});
+			$('#contacto').on('shown.bs.modal',function(e){
+				console.log("El modal se mostró");
+			});
+			$('#contacto').on('hide.bs.modal',function(e){
+				console.log("El modal se oculta");
+			});
+			$('#contacto').on('hidden.bs.modal',function(e){
+				console.log("El modal se ocultó");
+
+				$('#contactoBtn').removeClass('btn-primary');
+				$('#contactoBtn').addClass('btn-outline-success');
+				$('#contactoBtn').prop('disabled',false);
 			});
 		});
 	</script>
