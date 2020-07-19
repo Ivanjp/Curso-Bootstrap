@@ -1,8 +1,14 @@
 $yellow: #fffa19;
+$red: #bf2719;
+$green: #069e1b;
 
 @mixin margenes($top,$bottom){
     margin-top: $top;
     margin-bottom: $bottom;
+}
+
+@mixin relleno($ptop, $pright, $pbottom, $pleft){
+   padding: $ptop $pright $pbottom $pleft;
 }
 
 .jumbotron{
@@ -12,14 +18,14 @@ $yellow: #fffa19;
 }
 
 footer{
-    padding: 10 px 10 px 0 10px;
-    background-color: $yellow;
+    @include relleno(10px,10px,0px,10px);
+    background-color: $red;
     @include margenes(10px,0px );
 }
 
 .card-hotel{
     flex: 1 200px;
-    padding: 2px 0px 2px 0px;
+    @include relleno(2px,0px,2px,0px);
     @include margenes(10px,0px );
 }
 
